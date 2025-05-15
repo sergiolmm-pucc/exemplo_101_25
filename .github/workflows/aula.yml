@@ -7,16 +7,16 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
-      -name: Obter codigo do repositorio dit atual
-       uses: actions/checkout@v3
+      - name: Obter codigo do repositorio dit atual
+        uses: actions/checkout@v3
 
-      -name: instalando node
-       uses: actions/setup-node@v3
+      - name: instalando node
+        uses: actions/setup-node@v3
 
-      -name: instala dependencias
-       run: npm ci
+      - name: instala dependencias
+        run: npm ci
 
-      -name: Roda testes
-       run: npm test
+      - name: Roda testes
+        run: npm test
 
 
