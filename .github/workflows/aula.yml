@@ -17,7 +17,7 @@ jobs:
         run: npm ci
 
       - name: Roda eslint
-        run: npm lint
+        run: npm run lint
 
 
       - name: Roda testes
