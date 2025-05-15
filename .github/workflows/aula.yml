@@ -16,6 +16,10 @@ jobs:
       - name: instala dependencias
         run: npm ci
 
+      - name: Roda eslint
+        run: npm lint
+
+
       - name: Roda testes
         run: npm test
 
@@ -27,3 +31,4 @@ jobs:
           path: j*.xml
           reporter: jest-junit
 
+  
