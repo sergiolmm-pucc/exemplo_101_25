@@ -19,4 +19,11 @@ jobs:
       - name: Roda testes
         run: npm test
 
+      - name: Gera relatotio de testes 
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Jest tests
+          path: j*.xml
+          reporter: jest-junit
 
