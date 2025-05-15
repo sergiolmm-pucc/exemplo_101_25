@@ -7,8 +7,6 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
-      - name:  listar diretorio
-	run: ls -la
       -name: Obter codigo do repositorio dit atual
        uses: actions/checkout@v3
 
